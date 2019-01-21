@@ -1,12 +1,20 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './src/redux/createStore';
+
+import { store } from 'react-shared-redux';
+
+import { BASE_API_URL } from './appConstants';
 import { Home } from './src/scenes';
 
-const App = () => (
-  <Provider store={store}>
-    <Home />
-  </Provider>
-);
+
+const App = () => {
+  const reduxStore = store({}, BASE_API_URL);
+
+  return (
+    <Provider store={reduxStore}>
+      <Home />
+    </Provider>
+  );
+};
 
 export default App;
