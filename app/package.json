@@ -1,6 +1,6 @@
 {
-  "name": "reactnative_boilerplate",
-  "version": "0.1.0",
+  "name": "react-shared-boilerplate",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "@babel/core": "~7.2.2",
@@ -24,9 +24,7 @@
     "react-dom": "~16.7.0",
     "react-native-storybook-loader": "~1.8.0",
     "react-test-renderer": "~16.7.0",
-    "storybook-addon-jsx": "~6.0.0",
-    "redux-logger": "~3.0.6",
-    "redux-devtools-extension": "~2.13.7"
+    "storybook-addon-jsx": "~6.0.0"
   },
   "scripts": {
     "start": "react-native start",
@@ -39,7 +37,11 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "validate": "yarn lint && yarn test"
+    "validate": "yarn lint && yarn test",
+    "install-utils": "cd ../shared/utils && rm -rf node_modules && rm -rf lib && yarn && yarn run build && cd ../../app",
+    "install-services": "cd ../shared/services && rm -rf node_modules && rm -rf lib && yarn && yarn run build && cd ../../app",
+    "install-redux": "cd ../shared/redux && rm -rf node_modules && rm -rf lib && yarn && yarn run build && cd ../../app",
+    "preinstall": "yarn run install-utils && yarn run install-services && yarn run install-redux"
   },
   "jest": {
     "automock": false,
@@ -52,18 +54,14 @@
     }
   },
   "dependencies": {
-    "axios": "~0.18.0",
-    "immutable": "~4.0.0-rc.12",
+    "react-shared-services": "file:../shared/services",
+    "react-shared-utils": "file:../shared/utils",
     "prop-types": "~15.6.2",
     "react": "16.7.0",
     "react-native": "~0.57.8",
     "react-native-config": "~0.11.7",
     "react-native-device-info": "~0.24.3",
-    "react-native-i18n": "~2.0.15",
-    "react-redux": "~6.0.0",
-    "redux": "~4.0.1",
-    "redux-immutable": "~4.0.0",
-    "redux-thunk": "~2.3.0"
+    "react-native-i18n": "~2.0.15"
   },
   "config": {
     "react-native-storybook-loader": {

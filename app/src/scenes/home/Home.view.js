@@ -2,8 +2,10 @@ import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import PropTypes from 'prop-types';
 
+import { Colors } from 'react-shared-utils';
+
 import StorybookUI from '../../../storybook';
-import { Colors, Translations } from '../../utils';
+import { Translations } from '../../utils';
 import { Text, TouchableFeedback } from '../../components';
 
 import styles from './Home.styles';

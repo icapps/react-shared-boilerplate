@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import { View, ViewPropTypes, Platform, TouchableOpacity, TouchableHighlight, TouchableNativeFeedback } from 'react-native';
 import PropTypes from 'prop-types';
-import { Colors } from '../../utils';
+
+import { Colors } from 'react-shared-utils';
+
 import style from './TouchableFeedback.style';
 
 const THROTTLE = 500;

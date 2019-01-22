@@ -1,0 +1,17 @@
+{
+  "name": "react-shared-utils",
+  "version": "1.0.0",
+  "description": "Utils for the react-shared projects",
+  "main": "lib/index.js",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "~7.2.3",
+    "@babel/core": "~7.2.2",
+    "@babel/preset-env": "~7.3.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib"
+  }
+}

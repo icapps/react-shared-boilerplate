@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TouchableNativeFeedback } from 'react-native';
 import { shallow } from 'enzyme';
+
 import shallowTestHelper from '../../utils/test/shallowTestHelper';
 import mockAndroid from '../../utils/test/mockAndroid';
 import TouchableFeedback from './TouchableFeedback';

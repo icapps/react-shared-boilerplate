@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
-import { loginActions, loginSelectors } from '../../redux';
+import { loginActions, loginSelectors } from 'react-shared-redux';
+
 import Home from './Home.view';
 
 const mapStateToProps = state => ({
