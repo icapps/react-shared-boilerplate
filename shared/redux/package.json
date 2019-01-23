@@ -4,11 +4,12 @@
   "description": "Redux component for the react-shared projects",
   "main": "lib/index.js",
   "dependencies": {
-    "fosbury-services": "file:../services",
-    "fosbury-utils": "file:../utils",
+    "react-shared-services": "file:../services",
+    "react-shared-utils": "file:../utils",
     "immutable": "~4.0.0-rc.12",
     "redux": "~4.0.1",
-    "redux-thunk": "~2.3.0"
+    "redux-thunk": "~2.3.0",
+    "redux-immutable": "~4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "~7.2.3",
