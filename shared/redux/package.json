@@ -2,10 +2,9 @@
   "name": "react-shared-redux",
   "version": "1.0.0",
   "description": "Redux component for the react-shared projects",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "dependencies": {
     "react-shared-services": "file:../services",
-    "react-shared-utils": "file:../utils",
     "immutable": "~4.0.0-rc.12",
     "redux": "~4.0.1",
     "redux-thunk": "~2.3.0",

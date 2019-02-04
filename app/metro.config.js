@@ -7,7 +7,7 @@ const extraNodeModules = {
   'react-shared-services': path.resolve(__dirname + '/../shared/services/'),
   'react-shared-utils': path.resolve(__dirname + '/../shared/utils/'),
   'redux-logger': path.resolve(__dirname + '/../shared/redux/node_modules/redux-logger'),
-  '@babel': path.resolve(__dirname + '/../shared/redux/node_modules/@babel'),
+  '@babel/runtime': path.resolve(__dirname + '/../shared/services/node_modules/@babel/runtime'),
 };
 const watchFolders = [
   path.resolve(__dirname + '/../shared/redux/'),

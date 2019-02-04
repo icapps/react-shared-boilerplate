@@ -39,9 +39,9 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "validate": "yarn lint && yarn test",
-    "install-utils": "cd ../shared/utils && rm -rf node_modules && rm -rf lib && yarn && yarn run build && cd ../../app",
-    "install-services": "cd ../shared/services && rm -rf node_modules && rm -rf lib && yarn && yarn run build && cd ../../app",
-    "install-redux": "cd ../shared/redux && rm -rf node_modules && rm -rf lib && yarn && yarn run build && cd ../../app",
+    "install-utils": "cd ../shared/utils && rm -rf node_modules && yarn && cd ../../app",
+    "install-services": "cd ../shared/services && rm -rf node_modules && yarn && cd ../../app",
+    "install-redux": "cd ../shared/redux && rm -rf node_modules && yarn && cd ../../app",
     "preinstall": "yarn run install-utils && yarn run install-services && yarn run install-redux"
   },
   "jest": {
@@ -61,9 +61,7 @@
     "react-native-config": "~0.11.7",
     "react-native-device-info": "~0.24.3",
     "react-native-i18n": "~2.0.15",
-    "react-redux": "~6.0.0",
-    "react-shared-redux": "file:../shared/redux",
-    "react-shared-utils": "file:../shared/utils"
+    "react-redux": "~6.0.0"
   },
   "config": {
     "react-native-storybook-loader": {
