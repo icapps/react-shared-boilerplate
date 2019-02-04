@@ -8,7 +8,7 @@ import { Home } from './src/scenes';
 
 
 const App = () => {
-  const reduxStore = store({}, BASE_API_URL);
+  const reduxStore = store(BASE_API_URL);
 
   return (
     <Provider store={reduxStore}>
