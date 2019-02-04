@@ -61,7 +61,9 @@
     "react-native-config": "~0.11.7",
     "react-native-device-info": "~0.24.3",
     "react-native-i18n": "~2.0.15",
-    "react-redux": "~6.0.0"
+    "react-redux": "~6.0.0",
+    "react-shared-redux": "file:../shared/redux",
+    "react-shared-utils": "file:../shared/utils"
   },
   "config": {
     "react-native-storybook-loader": {
