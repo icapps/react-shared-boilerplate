@@ -2,7 +2,7 @@ import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import PropTypes from 'prop-types';
 
-import { Colors } from 'react-shared-utils';
+import { Colors } from '../../../../shared/utils';
 
 import StorybookUI from '../../../storybook';
 import { Translations } from '../../utils';

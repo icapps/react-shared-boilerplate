@@ -2,6 +2,18 @@
   "name": "react-shared-boilerplate",
   "version": "1.0.0",
   "private": true,
+  "dependencies": {
+    "prop-types": "~15.6.2",
+    "react": "16.7.0",
+    "react-native": "~0.57.8",
+    "react-native-config": "~0.11.7",
+    "react-native-device-info": "~0.24.3",
+    "react-native-i18n": "~2.0.15",
+    "react-redux": "~6.0.0",
+    "redux-immutable": "~4.0.0",
+    "redux-thunk": "~2.3.0",
+    "path": "~0.12.7"
+  },
   "devDependencies": {
     "@babel/core": "~7.2.2",
     "@babel/plugin-proposal-nullish-coalescing-operator": "~7.2.0",
@@ -25,7 +37,9 @@
     "react-dom": "~16.7.0",
     "react-native-storybook-loader": "~1.8.0",
     "react-test-renderer": "~16.7.0",
-    "storybook-addon-jsx": "~6.0.0"
+    "storybook-addon-jsx": "~6.0.0",
+    "redux-logger": "~3.0.6",
+    "redux-devtools-extension": "~2.13.8"
   },
   "scripts": {
     "start": "react-native start",
@@ -34,15 +48,11 @@
     "lint": "eslint -c .eslintrc --ext .js src",
     "lint:fix": "eslint -c .eslintrc --ext .js src --fix",
     "prestorybook": "rnstl",
-    "storybook": "storybook start -p 7007",
+    "storybook": "storybook start -p 7007  --projectRoots ../",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "validate": "yarn lint && yarn test",
-    "install-utils": "cd ../shared/utils && rm -rf node_modules && yarn && cd ../../app",
-    "install-services": "cd ../shared/services && rm -rf node_modules && yarn && cd ../../app",
-    "install-redux": "cd ../shared/redux && rm -rf node_modules && yarn && cd ../../app",
-    "preinstall": "yarn run install-utils && yarn run install-services && yarn run install-redux"
+    "validate": "yarn lint && yarn test"
   },
   "jest": {
     "automock": false,
@@ -53,17 +63,6 @@
     "transform": {
       "^.+\\.js$": "./node_modules/react-native/jest/preprocessor.js"
     }
-  },
-  "dependencies": {
-    "prop-types": "~15.6.2",
-    "react": "16.7.0",
-    "react-native": "~0.57.8",
-    "react-native-config": "~0.11.7",
-    "react-native-device-info": "~0.24.3",
-    "react-native-i18n": "~2.0.15",
-    "react-redux": "~6.0.0",
-    "react-shared-redux": "file:../shared/redux",
-    "react-shared-utils": "file:../shared/utils"
   },
   "config": {
     "react-native-storybook-loader": {

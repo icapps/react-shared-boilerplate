@@ -1,4 +1,4 @@
-import { LoginService } from 'react-shared-services';
+import { LoginService } from '../../../services';
 
 import * as types from './types';
 

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { loginActions, loginSelectors } from 'react-shared-redux';
+import { loginActions, loginSelectors } from '../../../../shared/redux';
 
 import Home from './Home.view';
 
