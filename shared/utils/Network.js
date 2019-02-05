@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let authToken = null;
-let apiRootUrl = null;
+let apiRootUrl = 'https://reqres.in/api/';
 
 class Network {
   static setHost(rootUrl) {
