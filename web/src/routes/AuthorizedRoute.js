@@ -21,9 +21,10 @@ class AuthorizedRoute extends Component {
   }
 }
 
-const mapStateToProps = () => ({
+const mapStateToProps = (state) => ({
+  state: state,
   pending: false,
-  logged: true,
+  logged: state.getIn(['login', 'isLoggedIn']),
 });
 
 export default connect(mapStateToProps)(AuthorizedRoute);

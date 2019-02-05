@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Button} from '../../components';
+import React, { Component } from 'react';
+import { Button } from '../../components';
 
 import './Login.style.css';
 
@@ -13,7 +13,7 @@ class LoginView extends Component {
   }
 
   onLoginUser = async () => {
-    await this.props.loginUser(this.state.username, this.state.password);
+    await this.props.login(this.state.username, this.state.password);
     this.props.history.push('/');
   };
 
