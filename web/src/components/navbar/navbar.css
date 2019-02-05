@@ -1,0 +1,21 @@
+.app-logo {
+  height: 5rem;
+  padding-top: 1.5rem;
+  float: left;
+}
+
+.app-header {
+  background-color: #222;
+  height: 5rem;
+  padding: 2rem;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header section h2 {
+  display: inline-block;
+  margin-left: 2rem;
+}

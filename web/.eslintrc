@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": "react-app",
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "never",
+        "exports": "never",
+        "functions": "ignore"
+      }
+    ],
+
+    "padded-blocks": [ "error", "never" ],
+    "no-console": "warn",
+    "no-throw-literal": 0,
+    "semi": [ "error", "always" ]
+  }
+}
