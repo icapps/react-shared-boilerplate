@@ -7,10 +7,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const _store = store(process.env.REACT_APP_API_HOST);
 
 ReactDOM.render(
-  <Provider store={_store}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')
